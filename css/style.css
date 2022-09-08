@@ -98,7 +98,7 @@ font-size: 35px;
 .container{   
     background-image: url(../img/backrojo.png);
     background-repeat: no-repeat;
-    background-size: 1900px 2500px;
+    background-size: 1900px 2900px;
 }
 
 .item{
@@ -125,4 +125,18 @@ article{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
+}
+
+.titulo-lista1{
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+.lista_generos{
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+.list{
+    color: white;
 }
