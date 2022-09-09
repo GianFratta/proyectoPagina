@@ -10,6 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 85px;
 }
 
 .logotipo{
@@ -34,34 +35,30 @@ text-align: center;
 justify-content: space-around;
 color: rgb(255, 255, 255);
 text-decoration: none;
-padding: 15px 15px;
+padding: 20px;
 background-color: rgb(255, 255, 255);
 margin: 10px -10px;
 font-family: 'Bebas Neue', cursive;
 font-size: 35px;
 }
 
-
-.nombre2{
-    color: white;
-}
-
-
-.pie{
-    font-size: 30px;
-    color: rgb(212, 0, 0);
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.logis{
-    color: white;
-}
-
 .rute{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.palabraRute{
+    font-size: 40px;
     color: rgb(212, 0, 0);
     text-decoration: none;
+}
+
+.container{   
+    background-image: url(../img/backrojo.png);
+    background-repeat: no-repeat;
+    background-size: 1900px 2900px;
+    padding: 85px 65px 10px 65px;
 }
 
 .subtitulo{
@@ -74,9 +71,6 @@ font-size: 35px;
     margin: 30px;
     
 }
-.taquilla{
-    width: 300px;
-}
 
 .populares{
     display: flex;
@@ -84,16 +78,8 @@ font-size: 35px;
     padding: 5px 100px; 
 }
 
-.minilogoBJ{
-    display: flex;
-    justify-content: left;
-    height: 60px;
-    padding: 10px;
-}
-.container{   
-    background-image: url(../img/backrojo.png);
-    background-repeat: no-repeat;
-    background-size: 1900px 2900px;
+article{
+    display: block;
 }
 
 .item{
@@ -103,13 +89,13 @@ font-size: 35px;
     font-size: 20px;
 }
 
-article{
-    display: block;
-}
 .item img{
     height: 400px;
 }
 
+.taquilla{
+    width: 300px;
+}
 
 .masvisto{
     display: flex;
@@ -117,23 +103,51 @@ article{
     padding: 5px 100px; 
 }
 
-.titulo-lista1{
-    color: red;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-}
-.lista_generos{
-    font-size: 40px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-}
-.list{
-    color: white;
-}
-
 .valoradas{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
 }
+
+.pie{
+    font-size: 40px;
+    color: rgb(212, 0, 0);
+    padding: 55px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.logis{
+    color: white;
+}
+
+
+ACA ARRANCA GENRES
+
+
+.minilogoBJ{
+    display: flex;
+    justify-content: left;
+    height: 60px;
+    padding: 10px;
+}
+
+.titulo-lista1{
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.lista_generos{
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.list{
+    color: white;
+}
+
+
 
