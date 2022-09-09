@@ -36,12 +36,12 @@ color: rgb(255, 255, 255);
 text-decoration: none;
 padding: 15px 15px;
 background-color: rgb(255, 255, 255);
-margin: 10px;
+margin: 10px -10px;
 font-family: 'Bebas Neue', cursive;
 font-size: 35px;
 }
 
-}
+
 .nombre2{
     color: white;
 }
@@ -78,17 +78,12 @@ font-size: 35px;
     width: 300px;
 }
 
-.pelispopulares{
+.populares{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
 }
 
-.seriespopulares{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 100px; 
-}
 .minilogoBJ{
     display: flex;
     justify-content: left;
@@ -106,7 +101,6 @@ font-size: 35px;
     color: white;
     text-align: center;
     font-size: 20px;
-
 }
 
 article{
@@ -116,12 +110,8 @@ article{
     height: 400px;
 }
 
-.masvistopeliculas{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 100px; 
-}
-.masvistoseries{
+
+.masvisto{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
@@ -140,3 +130,10 @@ article{
 .list{
     color: white;
 }
+
+.valoradas{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 100px; 
+}
+
