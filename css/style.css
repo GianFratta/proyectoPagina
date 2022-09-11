@@ -54,10 +54,14 @@ font-size: 35px;
     text-decoration: none;
 }
 
-.container{   
+.containerPadre{
     background-image: url(../img/backrojo.png);
     background-repeat: no-repeat;
-    background-size: 1900px 2900px;
+    background-size: 2000px 4900px;
+    padding: 0px 0px 110px 0px;
+}
+
+.containerBebe{   
     padding: 85px 65px 10px 65px;
 }
 
@@ -122,15 +126,11 @@ article{
     color: white;
 }
 
-
-ACA ARRANCA GENRES
-
-
 .minilogoBJ{
     display: flex;
     justify-content: left;
-    height: 60px;
-    padding: 10px;
+    height: 85px;
+    
 }
 
 .titulo-lista1{
