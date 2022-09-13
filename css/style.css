@@ -125,8 +125,31 @@ article{
     font-family: 'Bebas Neue', cursive;
 }
 
+.botonF{
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+   
+    margin: 10px -10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
 .logis{
     color: white;
+    
+}
+
+.nombresF{
+   display: flex;
+   flex-direction: column;
+   
+   
+   text-align: start;
+   
 }
 
 .minilogoBJ{
