@@ -55,9 +55,9 @@ font-size: 35px;
 }
 
 .containerPadre{
-    background-image: url(../img/backrojo.png);
+    background-image: url(../img/ULTIMO.jpg);
     background-repeat: no-repeat;
-    background-size: 2000px 4900px;
+    background-size: 1600px 4600px;
     padding: 0px 0px 110px 0px;
 }
 
@@ -119,7 +119,7 @@ article{
 .pie{
     font-size: 40px;
     color: rgb(212, 0, 0);
-    padding: 55px;
+    padding: 20px;
     align-items: flex-end;
     justify-content: flex-end;
     font-family: 'Bebas Neue', cursive;
