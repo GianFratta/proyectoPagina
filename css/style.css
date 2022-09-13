@@ -37,7 +37,6 @@ color: rgb(255, 255, 255);
 text-decoration: none;
 padding: 20px;
 background-color: rgb(255, 255, 255);
-margin: 10px -10px;
 font-family: 'Bebas Neue', cursive;
 font-size: 35px;
 }
@@ -147,6 +146,7 @@ article{
 .nombresFoot{
     display: flex;
     flex-direction: column;
+    text-align: right;
 }
 
 
