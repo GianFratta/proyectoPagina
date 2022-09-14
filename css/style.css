@@ -157,15 +157,6 @@ article{
     transform: scale(1.1);
 }
 
-.logis{
-    color: white;
-}
-
-.nuevasRutes{
-    color: white;
-    text-decoration: none;
-}
-
 .fa-brands{
     color: white;
 }
@@ -229,16 +220,27 @@ text-align: left;
 text-decoration: none;
 padding: 20px;
 margin: -10px 0px;
-background-color: white;
+background-color: rgb(255, 255, 255);
 color: black;
+justify-content: space-around;
 }
 .nuevasRutes{
     text-decoration: none;
-    background-color: #eee;
-    transform: scale(1.1);
+    background-color: rgb(167, 161, 161);
+    color: black;
     transition: transform.2s;
-    color: black
-    
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    border: 4px solid rgb(0, 0, 0);
+
+}
+.nuevasRutes:hover{
+    transform: scale(1.1);
+
 }
 .buscar{
     padding: 2px;
@@ -249,8 +251,38 @@ color: black;
     height: 60px;
     padding: 0px 20px;
     font-size: 20px;
-    color: rgb(184, 0, 0);
+    color: rgb(73, 73, 73);
     outline: none;
     border: 4px solid rgb(0, 0, 0);
     border-radius: 30px;
+}
+
+.detallegenero{
+    color: white;
+    font-size: 50px;
+    font-family: 'Red Hat Text', sans-serif;
+    
+}
+.contenidoDG{
+    color: white;
+    font-size: 30px;
+    font-family: 'Red Hat Text', sans-serif;
+
+}
+.trailerclass{
+    color: red;
+    font: 25px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+}
+
+summary{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.d3{
+    color: red;
+    font-size: 25px;
+    margin-top: -31px;
+    margin-left: 30px;
 }
