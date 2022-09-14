@@ -129,7 +129,7 @@ article{
 
 .pie{
     background-image: url(../img/fondo\ footer.jpg);
-    margin: 10px -10px -10px 0px;
+    margin: 10px 0px -10px 0px;
     font-size: 40px;
     color: white;
     padding: 35px;
@@ -158,6 +158,15 @@ article{
 }
 
 .logis{
+    color: white;
+}
+
+.nuevasRutes{
+    color: white;
+    text-decoration: none;
+}
+
+.fa-brands{
     color: white;
 }
 
@@ -217,15 +226,22 @@ article{
 .barrablanca{
 display: flex;
 text-align: left;
-color: rgb(255, 255, 255);
 text-decoration: none;
 padding: 20px;
-margin: -10px -10px;
-background-color: rgb(100, 5, 5);
+margin: -10px 0px;
+background-color: white;
+color: black;
 }
-
+.nuevasRutes{
+    text-decoration: none;
+    background-color: #eee;
+    transform: scale(1.1);
+    transition: transform.2s;
+    color: black
+    
+}
 .buscar{
-padding: 2px;
+    padding: 2px;
 
 }
 .buscar input{
