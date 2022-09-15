@@ -39,6 +39,7 @@ padding: 20px;
 background-color: rgb(255, 255, 255);
 font-family: 'Bebas Neue', cursive;
 font-size: 35px;
+margin: 0px -5px;
 }
 
 .rute{
@@ -213,28 +214,24 @@ display: flex;
 text-align: left;
 text-decoration: none;
 padding: 20px;
-margin: -10px 0px;
-background-color: rgb(255, 255, 255);
+margin: 0px -5px;
+background-color: rgba(255, 255, 255, 0.144);
 color: black;
 justify-content: space-around;
 }
 .nuevasRutes{
     text-decoration: none;
-    background-color: rgb(167, 161, 161);
-    color: black;
+    background-color: rgba(255, 255, 255, 0.863);
+    color: rgb(0, 0, 0);
     transition: transform.2s;
-    border-radius: 30px;
+    border-radius: 100px;
     padding: 15px;
     display: flex;
-    justify-content: space-around;
     font-family: 'Bebas Neue', cursive;
     font-size: 40px;
-    border: 4px solid rgb(0, 0, 0);
-
 }
 .nuevasRutes:hover{
     transform: scale(1.1);
-
 }
 .buscar{
     padding: 2px;
@@ -322,4 +319,51 @@ justify-content: space-around;
     margin: 90px;
     justify-content: space-around;
 
+}
+
+.form-registro{
+    color: rgb(255, 245, 245);
+    background-color: rgb(119, 4, 4);
+    width: 500px;
+    padding: 40px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: 'Red Hat Text', sans-serif;
+    
+}
+.form-registro h3{
+    color: black;
+    font-size: 25px;
+    font-family: 'Red Hat Text', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.volver-form{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.form-casilla{
+    width: 420px;
+    display: grid;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+.form-registro button{
+    background-color: rgba(0, 0, 0, 0.336);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0) ;
+    padding: 5px;
+    margin: 5px;
 }
