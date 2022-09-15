@@ -161,12 +161,6 @@ article{
     color: white;
 }
 
-.nombresFoot{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-}
-
 
 .minilogoBJ{
     display: flex;
@@ -285,4 +279,47 @@ summary{
     font-size: 25px;
     margin-top: -31px;
     margin-left: 30px;
+}
+
+.logis{
+    display: flex;
+justify-content: center;
+justify-content: space-around;
+    margin-right: 415px;
+    margin-left: 415px;
+    margin-bottom: -10px;
+    transition: transform.2s;
+}
+.logis:hover{
+    transform: scale(1.1);
+
+}
+.telefonosfoot{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #b8b4c59c;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.nombresFoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 6
+    0px;
+}
+
+.DHLogo{
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+    justify-content: space-around;
+
 }
