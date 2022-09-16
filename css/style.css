@@ -1,18 +1,15 @@
 *{
     box-sizing: border-box;
 }
-
 body{
     background-color: rgb(0, 0, 0);
 }
-
 .parte1{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 85px;
 }
-
 .logotipo{
     display: flex;
     justify-content: center;
@@ -21,14 +18,12 @@ body{
     padding: 30px;
     align-self: flex-start;
 }
-
 .nombre1{
     display: flex;
     justify-content: center;
     height: 140px;
     
 } 
-
 .principal2{
 display: flex;
 text-align: center;
@@ -41,31 +36,24 @@ font-family: 'Bebas Neue', cursive;
 font-size: 35px;
 margin: 0px -5px;
 }
-
 .rute{
     font-size: 40px;
     color: black;
     text-decoration: none;
     transition: transform.2s;
 }
-
 .rute:hover{
     transform: scale(1.1);
-
 }
-
 .palabraRute{
     font-size: 40px;
     color: rgb(212, 0, 0);
     text-decoration: none;
     transition: transform.2s;
 }
-
 .palabraRute:hover{
     transform: scale(1.1);
-
 }
-
 .containerPadre{
     background-image: url(../img/backrojo.png);
     background-repeat: no-repeat;
@@ -73,11 +61,9 @@ margin: 0px -5px;
     
     padding: 0px 0px 110px 0px;
 }
-
 .containerBebe{   
     padding: 85px 65px 10px 65px;
 }
-
 .subtitulo{
     display: flex;
     justify-content: center;
@@ -88,49 +74,40 @@ margin: 0px -5px;
     margin: 30px;
     
 }
-
 .populares{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
 }
-
 article{
     display: block;
 }
-
 .item{
     font-family: 'Red Hat Text', sans-serif;
     color: white;
     text-align: center;
     font-size: 20px;
 }
-
 .item img{
     height: 400px;
 }
-
 .taquilla{
     width: 300px;
     transition: transform.2s;
 }
 .taquilla:hover{
     transform: scale(1.1);
-
 }
-
 .masvisto{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
 }
-
 .valoradas{
     display: flex;
     justify-content: space-around;
     padding: 5px 100px; 
 }
-
 .pie{
     background-image: url(../img/fondo\ footer.jpg);
     margin: 10px 0px -10px 0px;
@@ -141,7 +118,6 @@ article{
     justify-content: flex-end;
     font-family: 'Bebas Neue', cursive;
 }
-
 .botonF{
     display: flex;
     align-items: flex-end;
@@ -160,12 +136,9 @@ article{
 .botonF:hover{
     transform: scale(1.1);
 }
-
 .fa-brands{
     color: white;
 }
-
-
 .minilogoBJ{
     display: flex;
     justify-content: left;
@@ -173,6 +146,7 @@ article{
 }
 
 .titulo-lista1{
+    color: red;
     color: rgb(255, 0, 0);
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
@@ -182,12 +156,14 @@ article{
 }
 
 .generos{
+   display: flex;
+   justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-   
-   
+
+
 }
 
 .lista_generos{
@@ -200,7 +176,6 @@ article{
    
     
 }
-
 .list{
     color: white;
     text-decoration: none;
@@ -220,7 +195,6 @@ article{
     margin: 60px 50px;
     width: 400px;
 }
-
 .containerDetalle{
     display: flex;
 }
@@ -243,7 +217,6 @@ article{
     color: white;
     font-size: 50px;
     font-family: 'Red Hat Text', sans-serif;
-
 }
 .d1{
     font-size: 30px;
@@ -254,7 +227,6 @@ article{
     text-decoration: none;
     color: white;
 }
-
 .barrablanca{
 display: flex;
 text-align: left;
@@ -281,7 +253,6 @@ justify-content: space-around;
 }
 .buscar{
     padding: 2px;
-
 }
 .buscar input{
     width: 250px;
@@ -294,6 +265,12 @@ justify-content: space-around;
     border-radius: 30px;
 }
 
+.detallegenero{
+    color: white;
+    font-size: 50px;
+    font-family: 'Red Hat Text', sans-serif;
+
+}
 
 .contenidoDG{
     color: white;
@@ -310,7 +287,6 @@ justify-content: space-around;
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
 }
-
 summary{
     font-size: 30px;
     color: rgb(255, 255, 255);
@@ -321,7 +297,6 @@ summary{
     margin-top: -31px;
     margin-left: 30px;
 }
-
 .logis{
     display: flex;
 justify-content: center;
@@ -333,7 +308,6 @@ justify-content: space-around;
 }
 .logis:hover{
     transform: scale(1.1);
-
 }
 .telefonosfoot{
     display: flex;
@@ -345,7 +319,6 @@ justify-content: space-around;
     font-size: 25px;
     margin-bottom: 40px;
 }
-
 .nombresFoot{
     display: flex;
     flex-direction: row;
@@ -355,16 +328,13 @@ justify-content: space-around;
     margin-top: 6
     0px;
 }
-
 .DHLogo{
     height: 95px;
     display: flex;
     justify-content: center;
     margin: 90px;
     justify-content: space-around;
-
 }
-
 .form-registro{
     color: rgb(255, 245, 245);
     background-color: rgb(119, 4, 4);
@@ -386,7 +356,6 @@ justify-content: space-around;
     display: flex;
     justify-content: center;
 }
-
 .volver-form{
     background-color: rgb(255, 255, 255);
     font-size: 20px;
@@ -400,9 +369,7 @@ justify-content: space-around;
     font-size: 20px;
     border-radius: 4px;
     margin-bottom: 10px;
-
 }
-
 .form-registro button{
     background-color: rgba(0, 0, 0, 0.336);
     font-size: 25px;
@@ -411,8 +378,6 @@ justify-content: space-around;
     padding: 5px;
     margin: 5px;
 }
-
-
 .bodyForm{
     font-family: 'Bebas Neue', cursive;
 }
@@ -438,7 +403,8 @@ justify-content: space-around;
 }
 .aboutUS h1{
     color: red;
-    font-size: 50px;
+    margin-top: 5px;
+    font-size: 70px;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
 
@@ -449,10 +415,39 @@ justify-content: space-around;
     color: red;
     font-size: 25px;
     border-radius: 5px;
-    padding: 5px;
+    padding: 35px;
+    margin-top: 75;
     font-family: 'Bebas Neue', cursive;
 
 }
+
+.logisAU{
+    display: flex;
+    font-size: 70px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.redesSociales{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.tomi{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.containerAU{
+    padding: 20px;
+}
+
+
+
 @media (max-width:420px){
     body{
         background-color:;
@@ -464,7 +459,6 @@ justify-content: space-around;
 
     .principal2{
         m
-        
+
     }
 }
-
