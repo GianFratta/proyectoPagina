@@ -39,6 +39,7 @@ padding: 20px;
 background-color: rgb(255, 255, 255);
 font-family: 'Bebas Neue', cursive;
 font-size: 35px;
+margin: 0px -5px;
 }
 
 .rute{
@@ -157,23 +158,8 @@ article{
     transform: scale(1.1);
 }
 
-.logis{
-    color: white;
-}
-
-.nuevasRutes{
-    color: white;
-    text-decoration: none;
-}
-
 .fa-brands{
     color: white;
-}
-
-.nombresFoot{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
 }
 
 
@@ -228,17 +214,24 @@ display: flex;
 text-align: left;
 text-decoration: none;
 padding: 20px;
-margin: -10px 0px;
-background-color: white;
+margin: 0px -5px;
+background-color: rgba(255, 255, 255, 0.144);
 color: black;
+justify-content: space-around;
 }
 .nuevasRutes{
     text-decoration: none;
-    background-color: #eee;
-    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.863);
+    color: rgb(0, 0, 0);
     transition: transform.2s;
-    color: black
-    
+    border-radius: 100px;
+    padding: 15px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+.nuevasRutes:hover{
+    transform: scale(1.1);
 }
 .buscar{
     padding: 2px;
@@ -249,8 +242,133 @@ color: black;
     height: 60px;
     padding: 0px 20px;
     font-size: 20px;
-    color: rgb(184, 0, 0);
+    color: rgb(73, 73, 73);
     outline: none;
     border: 4px solid rgb(0, 0, 0);
     border-radius: 30px;
+}
+
+.detallegenero{
+    color: white;
+    font-size: 50px;
+    font-family: 'Red Hat Text', sans-serif;
+    
+}
+.contenidoDG{
+    color: white;
+    font-size: 30px;
+    font-family: 'Red Hat Text', sans-serif;
+
+}
+.trailerclass{
+    color: red;
+    font: 25px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+}
+
+summary{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.d3{
+    color: red;
+    font-size: 25px;
+    margin-top: -31px;
+    margin-left: 30px;
+}
+
+.logis{
+    display: flex;
+justify-content: center;
+justify-content: space-around;
+    margin-right: 415px;
+    margin-left: 415px;
+    margin-bottom: -10px;
+    transition: transform.2s;
+}
+.logis:hover{
+    transform: scale(1.1);
+
+}
+.telefonosfoot{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #b8b4c59c;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.nombresFoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 6
+    0px;
+}
+
+.DHLogo{
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+    justify-content: space-around;
+
+}
+
+.form-registro{
+    color: rgb(255, 245, 245);
+    background-color: rgb(119, 4, 4);
+    width: 500px;
+    padding: 40px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 4px;
+    font-family: 'Red Hat Text', sans-serif;
+    
+}
+.form-registro h3{
+    color: black;
+    font-size: 25px;
+    font-family: 'Red Hat Text', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.volver-form{
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.form-casilla{
+    width: 420px;
+    display: grid;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+.form-registro button{
+    background-color: rgba(0, 0, 0, 0.336);
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0) ;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.bodyForm{
+    font-family: 'Bebas Neue', cursive;
 }
