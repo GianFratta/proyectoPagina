@@ -48,16 +48,19 @@ margin: 0px -5px;
     text-decoration: none;
     transition: transform.2s;
 }
+
 .rute:hover{
     transform: scale(1.1);
 
 }
+
 .palabraRute{
     font-size: 40px;
     color: rgb(212, 0, 0);
     text-decoration: none;
     transition: transform.2s;
 }
+
 .palabraRute:hover{
     transform: scale(1.1);
 
@@ -173,16 +176,28 @@ article{
     color: red;
     font-family: 'Bebas Neue', cursive;
     font-size: 50px;
+
+}
+
+.generos{
+   display: flex;
+   justify-content: center;
 }
 
 .lista_generos{
     font-size: 40px;
     font-family: 'Bebas Neue', cursive;
     color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+   
+    
 }
 
 .list{
     color: white;
+    text-decoration: none;
 }
 
 .fotodetalle{
@@ -200,10 +215,10 @@ article{
 
 }
 .d1{
-    font-size: 20px;
+    font-size: 30px;
 }
 .d2{
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Bebas Neue', cursive;
     text-decoration: none;
     color: white;
@@ -371,4 +386,8 @@ justify-content: space-around;
 
 .bodyForm{
     font-family: 'Bebas Neue', cursive;
+}
+.rutasGen{
+    color: red;
+    text-decoration: none;
 }
