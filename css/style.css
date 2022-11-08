@@ -472,6 +472,11 @@ justify-content: space-around;
     padding: 65px 65px 0px 65px;
 }
 
+
+.filtro{
+    display: none;
+}
+
 @media (max-width:420px){
     body{
         background-color:;
