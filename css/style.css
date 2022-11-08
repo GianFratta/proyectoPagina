@@ -143,30 +143,10 @@ article{
     font-size: 40px;
     color: white;
     padding: 35px;
-    align-items: flex-end;
-    justify-content: flex-end;
     font-family: 'Bebas Neue', cursive;
 }
 
-.botonF{
-    display: flex;
-    align-items: flex-end;
-    text-align: left;
-    text-decoration: none;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.411);
-    border: 2px solid #eee;
-    border-radius: .5rem;
-    cursor: pointer;
-    transition: transform.2s;
-    margin: 10px 10px;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-}
 
-.botonF:hover{
-    transform: scale(1.1);
-}
 
 .fa-brands{
     color: white;
@@ -178,29 +158,27 @@ article{
     height: 85px;
 }
 
-.titulo-lista1{
-    color: red;
-    color: rgb(255, 0, 0);
-    font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-    margin: 80px ;
-    margin-bottom: -30px;
+
+
+.containerG{
+    display: flex;
+    justify-content: center;
 }
 
 .generos{
-   display: flex;
-   justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
+}
+
+.titulo-lista1{
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+    margin: 80px 80px 30px 80px;
 }
 
 .lista_generos{
     font-size: 40px;
     font-family: 'Bebas Neue', cursive;
-    color: white;
-    text-decoration: none;
     display: flex;
     flex-direction: column;
 }
@@ -213,14 +191,8 @@ article{
 
 .list:hover{
     transform: scale(2.1);
-
 }
 
-.containerGL{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .fotodetalle{
     margin: 60px 50px;
