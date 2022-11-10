@@ -472,22 +472,45 @@ justify-content: space-around;
     padding: 65px 65px 0px 65px;
 }
 
-
-.filtro{
-    display: none;
-}
-
 @media (max-width:420px){
+    
     body{
-        background-color:;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-
+        text-align: center;
     }
 
     .principal2{
-        m
-
+        background-color: white;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        
     }
+
+    .rute{
+        display: flex;
+        font-size: 45px;
+        margin: -80px;
+        
+    }
+
+    .populares{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .masvisto{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .valoradas{
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
