@@ -546,3 +546,8 @@ justify-content: space-around;
 
 }
 
+.estrella{
+    font-size: 40px;
+    color: rgb(212, 0, 0);
+    text-decoration: none;
+}
