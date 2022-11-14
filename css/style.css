@@ -180,11 +180,18 @@ article{
     height: 85px;
 }
 
-
-
 .containerG{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.containerF{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .generos{
@@ -196,6 +203,7 @@ article{
     font-family: 'Bebas Neue', cursive;
     font-size: 55px;
     margin: 80px 80px 30px 80px;
+    text-align: center;
 }
 
 .lista_generos{
