@@ -1,7 +1,7 @@
 
 //Detalle de pelicula
 //Obtengo la qs
-let queryString = location.search
+let queryS = location.search
 
 //Construyo un objeto literal
 let QSobject = new URLSearchParams (location.search)
