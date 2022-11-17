@@ -12,12 +12,14 @@ fetch(url_PelisPopulares)
         let pelis_populares = document.querySelector('.populares')
         let pelis_p = ``
 
-        for (let i = 0; i < 12; i++){
+        for (let i = 0; i < 5; i++){
             pelis_p += `<article class="item"> 
             <a href="./detalles.html">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].title}</h3>
+            <p>${data.results[i].release_date}</p>
+            <p>${data.results[i].overview}</p>
             </article>`
         }
 
@@ -44,12 +46,14 @@ fetch(url_SeriesPopulares)
         let series_populares = document.querySelector('.seriesPopulares')
         let series_p = ``
 
-        for (let i = 0; i < 10; i++){
+        for (let i = 0; i < 5; i++){
             series_p += `<article class="item"> 
             <a href="./detalles.html">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
+            <p>${data.results[i].first_air_date}</p>
+            <p>${data.results[i].overview}</p>
             </article>`
         }
 
@@ -76,12 +80,14 @@ fetch(url_pelisValoradas)
         let pelis_valoradas = document.querySelector('.valoradas')
         let pelis_v = ``
 
-        for (let i = 0; i < 12; i++){
+        for (let i = 0; i < 5; i++){
             pelis_v += `<article class="item"> 
             <a href="./detalles.html">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].title}</h3>
+            <p>${data.results[i].release_date}</p>
+            <p>${data.results[i].overview}</p>
             </article>`
         }
 
@@ -108,12 +114,14 @@ fetch(url_seriesValoradas)
         let series_valoradas = document.querySelector('.seriesValoradas')
         let series_v = ``
 
-        for (let i = 0; i < 12; i++){
+        for (let i = 0; i < 5; i++){
             series_v += `<article class="item"> 
             <a href="./detalles.html">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
+            <p>${data.results[i].first_air_date}</p>
+            <p>${data.results[i].overview}</p>
             </article>`
         }
 

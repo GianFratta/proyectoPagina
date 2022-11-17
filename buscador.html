@@ -11,9 +11,7 @@
 </head>
 <body>
     <header class="minilogoBJ">
-        
-            <img src="./img/minilogopaginas.png" alt="minilogo">
-
+        <img src="./img/minilogopaginas.png" alt="minilogo">
     </header>
 
     <p class="principal2">
@@ -28,10 +26,26 @@
 
     <section class="containerBebeFyB">
             
-        <h2 class="subtituloFyB">Resultados de Busqueda</h2>
+        <div class="buscarPDB">
+            <form class="buscador" action="./buscador.html" method="get">
+                <div>
+                    <input type="text" class="rta" name="busqueda" placeholder="Buscar" required>
+                   
+                    <span class="mensaje"></span>
+                </div>
+            </form>
+        </div>
+        
+        <h2 class="titulo">Resultados de Busqueda</h2>
+        <section class="primeraLinea">
+
+        </section>
     
-        <div class="populares">
-            <article class="item">
+        <section class="segundaLinea">
+
+        </section>
+       <!--  <div class="populares">
+           <!-<article class="item">
                 <a href="./detalles.html"><img class= "taquilla" src="./img/la gorda mariposa.jpg" alt="wiree"></a>
                 <h3>Efecto Mariposa</h3>
                 <p>2014   |   Ciencia Ficcion / Suspenso</p>
@@ -54,8 +68,8 @@
                 <h3>Goodfellas</h3>
                 <p>1990   |   Suspenso</p>
             </article>
-
-        </div>
+ -->
+       <!--  </div>--> -->
 
     </section>
 
@@ -103,6 +117,7 @@
         </section>
     </footer>
 
-
+    <script src="./js/search-results.js"></script>
+    
 </body>
 </html>
