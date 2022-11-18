@@ -67,7 +67,7 @@ fetch(url_SeriesPopulares)
 
 
 /* PELIS MEJOR VALORADAS */
-let url_pelisValoradas = "https://api.themoviedb.org/3/movie/top_rated?api_key=39761ff3840b501535e80bbc7bffb035&language=en-US&page=1"
+let url_pelisValoradas = "https://api.themoviedb.org/3/movie/top_rated?api_key=3761f9f3840b501535e80bbc7bffb035&language=en-US&page=1"
 
 fetch(url_pelisValoradas)
     .then(function(res){

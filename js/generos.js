@@ -56,3 +56,7 @@ fetch(url_generosSeries)
         generosSeries.innerHTML = generos_s
 
     })
+    .catch(function(error){
+        console.log('Los errores son' + error)
+        })
+    

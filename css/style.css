@@ -103,6 +103,8 @@ margin: 0px -8px;
 .mensaje{
     color: red;
     text-decoration: underline;
+    background-color: white;
+    text-decoration: none;
 }
 
 
