@@ -19,7 +19,6 @@ fetch(url_PelisPopulares)
             </a>
             <h3 class="articulo">${data.results[i].title}</h3>
             <p>${data.results[i].release_date}</p>
-            <p>${data.results[i].overview}</p>
             </article>`
         }
 
@@ -35,9 +34,25 @@ fetch(url_PelisPopulares)
 /* SERIES POPULARES */
 let url_SeriesPopulares = "https://api.themoviedb.org/3/tv/popular?api_key=39761ff3840b501535e80bbc7bffb035&language=en-US&page=1"
 
+/* fetch es tatatata
+nos permite comnicarnos con api
+una api es bla bla bla
+/* usamos un then y un catch porque fetch s asincronico */
+/* asincronismo y promesa es bla bla  */
+
 fetch(url_SeriesPopulares)
     .then(function(res){
         return res.json();
+        /* el primer then toma una funcion anonima y el res es la infromacion que nos trae la api
+        usamos el metood json para pasar la respuesta de json a javascript
+        json tatatata
+
+        el fetch te devulve una promesa
+        las promesas usan .then para decir "cuando se resuelva esto, hace tal cosa, en este caso hace esta funcion"
+
+        el res.json tambien devulve un promesa poreso el segundo .then
+
+        explicar el  parametro data y el catch */
     })
     .then(function(data){
         console.log(data);
@@ -53,7 +68,6 @@ fetch(url_SeriesPopulares)
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
             <p>${data.results[i].first_air_date}</p>
-            <p>${data.results[i].overview}</p>
             </article>`
         }
 
@@ -67,7 +81,7 @@ fetch(url_SeriesPopulares)
 
 
 /* PELIS MEJOR VALORADAS */
-let url_pelisValoradas = "https://api.themoviedb.org/3/movie/top_rated?api_key=3761f9f3840b501535e80bbc7bffb035&language=en-US&page=1"
+let url_pelisValoradas = "https://api.themoviedb.org/3/movie/top_rated?api_key=e3f1ae8bae04c04c63af7b6996decd02&language=en-US&page=1"
 
 fetch(url_pelisValoradas)
     .then(function(res){
@@ -87,7 +101,6 @@ fetch(url_pelisValoradas)
             </a>
             <h3 class="articulo">${data.results[i].title}</h3>
             <p>${data.results[i].release_date}</p>
-            <p>${data.results[i].overview}</p>
             </article>`
         }
 
@@ -121,7 +134,6 @@ fetch(url_seriesValoradas)
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
             <p>${data.results[i].first_air_date}</p>
-            <p>${data.results[i].overview}</p>
             </article>`
         }
 
