@@ -1,21 +1,21 @@
 let barraDeBusqueda = document.querySelector(".barraDeBusqueda")
 let respuesta = document.querySelector(".respuesta")
-let msj = document.querySelector(".msj")
+let mensaje = document.querySelector(".mensaje")
 let titulo = document.querySelector(".titulo")
-
 barraDeBusqueda.addEventListener('submit', function(e){
     e.preventDefault()
 
-    if(respuestabarraDeBusqueda.value == '') {
-        msj.innerHTML = "No escribio nada"
+    if(respuesta.value == '') {
+        mensaje.innerHTML = "No escribio nada"
+        
     }
-    else if(respuestabarraDeBusqueda.value.length < 3){
-        msj.innerHTML = "Minimo 4 caracteres"
+    else if(respuesta.value.length < 3){
+        mensaje.innerHTML = "Minimo 4 caracteres"
     }
 
     else{
-        this.submit(e)
-        msj.innerHTML = ""
+        this.submit()
+        mensaje.innerHTML = ""
     }
 })
 
