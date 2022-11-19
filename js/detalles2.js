@@ -1,3 +1,92 @@
+//CAMBIAR ESTOS DATOS POR LOS DE SERIES.
+//Detalle de pelicula
+//Obtengo la qs
+let queryString = location.search;
+
+//Construyo un objeto literal
+let queryStringObj3 = new URLSearchParams (queryString);
+
+//obtengo el id de la propiedad del objeto literal
+let id = queryStringObj3.get('id');
+
+//endpoint con el id de la qs
+let url1 = `https://api.themoviedb.org/3/movie/${id}?api_key=6b8e258b66583b977b648fcc8df4f960&language=en-US`
+
+//fetch
+fetch(url1)
+   .then(function(res){
+     return res.json();
+   })
+   .then(function(data){
+     console.log(data);
+    //capturar cada elemento del html que queremos completar
+     let urlappend = "https://image.tmdb.org/t/p/original"
+     let nombre = document.querySelector('h2');
+     let sinopsis = document.querySelector('.sinopsis');
+     let estreno = document.querySelector('.estreno');
+     let img = document.querySelector('.peli-taquilla');
+     let genero = document.querySelector('.genero');
+     let rating = document.querySelector('.rating');
+  
+
+    // Agregar la información de la api y mostrarlo en el html
+     nombre.innerText = data.title;
+     sinopsis.innerText += data.overview;
+     estreno.innerText += data.release_date;
+     img.innerHTML = `<img class="peli-taquilla" src="${urlappend + data.poster_path}" alt="">`
+     genero.innerHTML = data.genre_ids;
+     rating.innerText += data.vote_average;
+     
+
+
+
+   })
+   .catch(function(e){
+      console.log(e);
+   })
+
+
+
+//FAVORITOS
+let favoritosSeries = []
+
+let recuperoStorageSeries = localStorage.getItem('seriesFavs')
+
+
+if(recuperoStorageSeries !== null){
+    favori = JSON.parse(recuperoStorageSeries)
+}
+ 
+let estrella = document.querySelector('button');
+
+
+if(favoritosSeries.includes(id)){
+    estrella.innerText = 'Quitar de favoritos'
+}
+ 
+estrella.addEventListener('click', function(){
+
+    if(favoritosSeries.includes(id)){
+       let indiceDePelicula = favoritosSeries.indexOf(id);
+       favoritosSeries.splice(indiceDePelicula, 1)
+       estrella.innerText = 'Agregar a Favoritos';
+ 
+    } else {
+          favoritosSeries.push(id);
+          estrella.innerText = 'Quitar de Favoritos';
+    }
+ 
+    let favsToString = JSON.stringify(favoritosSeries)
+    localStorage.setItem('pelisFavs',favsToString)
+    
+    console.log(localStoragSeries);
+ 
+})
+
+
+
+//BUSCADOR
+
 let url = 'https://api.themoviedb.org/3/movie/{movie_id}?api_key=e3f1ae8bae04c04c63af7b6996decd02&language=en-US'
 
 

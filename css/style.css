@@ -283,9 +283,14 @@ article{
     text-align: center;
 }
 
+.detallesevenimg{
+    margin: 60px 50px;
+    width: 400px;
+}
+
 .detalleSevenContenido{
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Red Hat Text', sans-serif;
 }
 
@@ -607,4 +612,9 @@ justify-content: space-around;
     font-size: 20px;
     color: rgb(212, 0, 0);
     text-decoration: none;
+}
+
+.peli-taquilla{
+    margin: 60px 50px;
+    width: 400px;
 }

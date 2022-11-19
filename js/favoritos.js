@@ -1,15 +1,14 @@
 
+//FAVORITOS PELICULAS
+let recuperoStoragePeliculas = localStorage.getItem('pelisFavs')
+let favoritosPeliculas = JSON.parse(recuperoStoragePeliculas);
+console.log(favoritosPeliculas);
 
+let favsPelis = document.querySelector('.favsPelis')
+let favosPeliculas = []
 
-let recuperoStorage = localStorage.getItem('pelisFavs')
-let peliculas = JSON.parse(recuperoStorage);
-console.log(peliculas);
-
-let favs = document.querySelector('.favs')
-let favos = []
-
-for (let i = 0; i < peliculas.length; i++){
-   let url = `https://api.themoviedb.org/3/account/{account_id}/favorite?api_key=ef66ec72eea3905791e313820b40269c`
+for (let i = 0; i < favoritosPeliculas.length; i++){
+   let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US` //CAMBIAR URL POR LA DE PELICULAS.
    fetch(url)
    .then(function (res){
       return res.json()
@@ -28,6 +27,38 @@ for (let i = 0; i < peliculas.length; i++){
    })
 
 }
+
+//FAVORITOS SERIES
+let recuperoStorSeries = localStorage.getItem('pelisFavs')
+let favoritosSeries = JSON.parse(recuperoStorSeries);
+console.log(favoritosPeliculas);
+
+let favsSeries = document.querySelector('.favsSeries')
+let favosSeries = []
+
+for (let i = 0; i < favoritosSeries.length; i++){
+   let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US` //ESTA URL YA ESTA BIEN
+   fetch(url)
+   .then(function (res){
+      return res.json()
+   })
+   .then(function (data){
+      console.log(data);
+      favos += pelis_p += `<article class="item"> 
+      <a href="./detalles.html">
+      <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
+      </a>
+      <h3 class="articulo">${data.results[i].title}</h3>
+      </article>`
+   })
+   .catch(function (error){
+      console.log(error);
+   })
+
+}
+
+
+//buscador
 
 let barraDeBusqueda = document.querySelector(".barraDeBusqueda")
 let respuesta = document.querySelector(".respuesta")

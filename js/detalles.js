@@ -1,7 +1,5 @@
-
-/* //Detalle de pelicula
+//Detalle de pelicula
 //Obtengo la qs
-/* let queryString = location.search; */
 let queryString = location.search;
 
 //Construyo un objeto literal
@@ -11,7 +9,7 @@ let queryStringObj = new URLSearchParams (queryString);
 let id = queryStringObj.get('id');
 
 //endpoint con el id de la qs
-let url = `https://api.themoviedb.org/3/movie/{movie_id}?api_key=e3f1ae8bae04c04c63af7b6996decd02&language=en-US`
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=6b8e258b66583b977b648fcc8df4f960&language=en-US`
 
 //fetch
 fetch(url)
@@ -21,17 +19,25 @@ fetch(url)
    .then(function(data){
      console.log(data);
     //capturar cada elemento del html que queremos completar
+     let urlappend = "https://image.tmdb.org/t/p/original"
      let nombre = document.querySelector('h2');
      let sinopsis = document.querySelector('.sinopsis');
      let estreno = document.querySelector('.estreno');
      let img = document.querySelector('.peli-taquilla');
+     let genero = document.querySelector('.genero');
+     let rating = document.querySelector('.rating');
+  
 
     // Agregar la información de la api y mostrarlo en el html
-     nombre.innerText = data.original_title;
+     nombre.innerText = data.title;
      sinopsis.innerText += data.overview;
      estreno.innerText += data.release_date;
-     img.src = data.poster_path;
-    
+     img.innerHTML = `<img class="peli-taquilla" src="${urlappend + data.poster_path}" alt="">`
+     genero.innerHTML = data.genre_ids;
+     rating.innerText += data.vote_average;
+     
+
+
 
    })
    .catch(function(e){
@@ -41,41 +47,39 @@ fetch(url)
 
 
 //FAVORITOS
- let favoritos = []
+let favoritosPeliculas = []
 
-let recuperStorage = localStorage.getItem('pelisFavs')
+let recuperoStoragePeliculas = localStorage.getItem('pelisFavs')
 
 
-if(recuperStorage !== null){
-    favoritos = JSON.parse(recuperStorage)
+if(recuperoStoragePeliculas !== null){
+    favoritosPeliculas = JSON.parse(recuperoStoragePeliculas)
 }
  
 let estrella = document.querySelector('button');
 
 
-   if(favoritos.includes(id)){
+if(favoritosPeliculas.includes(id)){
     estrella.innerText = 'Quitar de favoritos'
 }
  
 estrella.addEventListener('click', function(){
 
-    if(favoritos.includes(id)){
-       let indiceDePelicula = favoritos.indexOf(id);
-       favoritos.splice(indiceDePelicula, 1)
+    if(favoritosPeliculas.includes(id)){
+       let indiceDePelicula = favoritosPeliculas.indexOf(id);
+       favoritosPeliculas.splice(indiceDePelicula, 1)
        estrella.innerText = 'Agregar a Favoritos';
  
     } else {
-          favoritos.push(id);
+          favoritosPeliculas.push(id);
           estrella.innerText = 'Quitar de Favoritos';
     }
  
-    let favsToString = JSON.stringify(favoritos)
+    let favsToString = JSON.stringify(favoritosPeliculas)
     localStorage.setItem('pelisFavs',favsToString)
     
     console.log(localStorage);
- 
  })
-
 
 /* BUSCADOR */
 
