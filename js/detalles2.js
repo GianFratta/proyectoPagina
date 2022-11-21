@@ -1,5 +1,5 @@
-//CAMBIAR ESTOS DATOS POR LOS DE SERIES.
-//Detalle de pelicula
+//CAMBIAR ESTOS DATOS POR LOS DE SERIES.(creo que ya esta)
+//Detalle de serie.
 //Obtengo la qs
 let queryString = location.search;
 
@@ -10,7 +10,7 @@ let queryStringObj3 = new URLSearchParams (queryString);
 let id = queryStringObj3.get('id');
 
 //endpoint con el id de la qs
-let url1 = `https://api.themoviedb.org/3/movie/${id}?api_key=6b8e258b66583b977b648fcc8df4f960&language=en-US`
+let url1 = `https://api.themoviedb.org/3/tv/${id}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US`
 
 //fetch
 fetch(url1)
@@ -30,9 +30,9 @@ fetch(url1)
   
 
     // Agregar la información de la api y mostrarlo en el html
-     nombre.innerText = data.title;
+     nombre.innerText = data.name;
      sinopsis.innerText += data.overview;
-     estreno.innerText += data.release_date;
+     estreno.innerText += data.first_air_date;
      img.innerHTML = `<img class="peli-taquilla" src="${urlappend + data.poster_path}" alt="">`
      genero.innerHTML = data.genre_ids;
      rating.innerText += data.vote_average;
@@ -178,7 +178,7 @@ fetch(url)
     
             for(let i=0; i<3; i++){
                 section.innerHTML += `<article class="item">
-                    <a href="./detalles.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
+                    <a href="./detalles series.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
                     </a>
                     <h1 class="articulo">${data.results[i].original_name}</h1>
                     <p>${data.results[i].first_air_date}</p>

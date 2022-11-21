@@ -8,7 +8,7 @@ let favsPelis = document.querySelector('.favsPelis')
 let favosPeliculas = []
 
 for (let i = 0; i < favoritosPeliculas.length; i++){
-   let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US` //CAMBIAR URL POR LA DE PELICULAS.
+   let url = `https://api.themoviedb.org/3/movie/${favoritosPeliculas[i]}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US` //ES ESTE.
    fetch(url)
    .then(function (res){
       return res.json()
@@ -133,7 +133,7 @@ fetch(url_searchSeries)
 
         for(let i=0; i<3; i++){
             section.innerHTML += `<article class="item">
-                <a href="./detalles.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
+                <a href="./detalles series.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
                 </a>
                 <h1 class="articulo">${data.results[i].original_name}</h1>
                 <p>${data.results[i].first_air_date}</p>

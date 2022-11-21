@@ -63,7 +63,7 @@ fetch(url_SeriesPopulares)
 
         for (let i = 0; i < 5; i++){
             series_p += `<article class="item"> 
-            <a href="./detalles.html">
+            <a href="./detalles series.html">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
@@ -129,7 +129,7 @@ fetch(url_seriesValoradas)
 
         for (let i = 0; i < 5; i++){
             series_v += `<article class="item"> 
-            <a href="./detalles.html">
+            <a href="./detalles series.html">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
@@ -220,7 +220,7 @@ fetch(url_searchSeries)
 
         for(let i=0; i<3; i++){
             section.innerHTML += `<article class="item">
-                <a href="./detalles.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
+                <a href="./detalles series.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
                 </a>
                 <h1 class="articulo">${data.results[i].original_name}</h1>
                 <p>${data.results[i].first_air_date}</p>

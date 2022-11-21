@@ -9,7 +9,7 @@ let queryStringObj = new URLSearchParams (queryString);
 let id = queryStringObj.get('id');
 
 //endpoint con el id de la qs
-let url = `https://api.themoviedb.org/3/movie/${id}?api_key=6b8e258b66583b977b648fcc8df4f960&language=en-US`
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US`
 
 //fetch
 fetch(url)
@@ -156,7 +156,7 @@ fetch(url_searchSeries)
 
         for(let i=0; i<3; i++){
             section.innerHTML += `<article class="item">
-                <a href="./detalles.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
+                <a href="./detalles series.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
                 </a>
                 <h1 class="articulo">${data.results[i].original_name}</h1>
                 <p>${data.results[i].first_air_date}</p>
