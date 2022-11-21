@@ -1,22 +1,22 @@
 //Detalle de pelicula
 //Obtengo la qs
-let queryString = location.search;
+let queryString = location.search
 
 //Construyo un objeto literal
-let queryStringObj = new URLSearchParams (queryString);
+let queryStringObj = new URLSearchParams(queryString)
 
 //obtengo el id de la propiedad del objeto literal
-let id = queryStringObj.get('id');
+let id = queryStringObj.get('id')
 
 //endpoint con el id de la qs
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US`
 
 //fetch
 fetch(url)
-   .then(function(res){
+        .then(function(res){
      return res.json();
-   })
-   .then(function(data){
+    })
+        .then(function(data){
      console.log(data);
     //capturar cada elemento del html que queremos completar
      let urlappend = "https://image.tmdb.org/t/p/original"
@@ -35,14 +35,10 @@ fetch(url)
      img.innerHTML = `<img class="peli-taquilla" src="${urlappend + data.poster_path}" alt="">`
      genero.innerHTML = data.genre_ids;
      rating.innerText += data.vote_average;
-     
-
-
-
-   })
-   .catch(function(e){
+    })
+        .catch(function(e){
       console.log(e);
-   })
+    })
 
 
 
@@ -104,9 +100,9 @@ barraDeBusqueda.addEventListener('submit', function(e){
     }
 })
 
-let querystring = location.search
-let queryStringObj2 = new URLSearchParams(querystring);
-let busqueda = queryStringObj.get('busqueda');
+let querystringBuscador = location.search;
+let queryStringObj2 = new URLSearchParams(querystringBuscador);
+let busqueda = queryStringObj2.get('busqueda');
 console.log(busqueda);
 let url_searchPelis = `https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=39761ff3840b501535e80bbc7bffb035&language=en-US&page=1&include_adult=false`
 

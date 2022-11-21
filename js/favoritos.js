@@ -5,15 +5,15 @@ let favoritosPeliculas = JSON.parse(recuperoStoragePeliculas);
 console.log(favoritosPeliculas);
 
 let favsPelis = document.querySelector('.favsPelis')
-let favosPeliculas = []
+let favosPeliculas = ''
 
 for (let i = 0; i < favoritosPeliculas.length; i++){
    let url = `https://api.themoviedb.org/3/movie/${favoritosPeliculas[i]}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US` //ES ESTE.
    fetch(url)
-   .then(function (res){
+        .then(function (res){
       return res.json()
    })
-   .then(function (data){
+        .then(function (data){
       console.log(data);
       favos += pelis_p += `<article class="item"> 
       <a href="./detalles.html">
@@ -22,7 +22,7 @@ for (let i = 0; i < favoritosPeliculas.length; i++){
       <h3 class="articulo">${data.results[i].title}</h3>
       </article>`
    })
-   .catch(function (error){
+        .catch(function (error){
       console.log(error);
    })
 
@@ -34,15 +34,15 @@ let favoritosSeries = JSON.parse(recuperoStorSeries);
 console.log(favoritosPeliculas);
 
 let favsSeries = document.querySelector('.favsSeries')
-let favosSeries = []
+let favosSeries = ''
 
 for (let i = 0; i < favoritosSeries.length; i++){
    let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US` //ESTA URL YA ESTA BIEN
    fetch(url)
-   .then(function (res){
+        .then(function (res){
       return res.json()
    })
-   .then(function (data){
+        .then(function (data){
       console.log(data);
       favos += pelis_p += `<article class="item"> 
       <a href="./detalles.html">
@@ -51,7 +51,7 @@ for (let i = 0; i < favoritosSeries.length; i++){
       <h3 class="articulo">${data.results[i].title}</h3>
       </article>`
    })
-   .catch(function (error){
+        .catch(function (error){
       console.log(error);
    })
 
@@ -81,9 +81,9 @@ barraDeBusqueda.addEventListener('submit', function(e){
     }
 })
 
-let querystring = location.search
-let queryStringObj = new URLSearchParams(querystring);
-let busqueda = queryStringObj.get('busqueda');
+let querystringBuscador = location.search
+let queryStringObj2 = new URLSearchParams(querystringBuscador);
+let busqueda = queryStringObj2.get('busqueda');
 console.log(busqueda);
 let url_searchPelis = `https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=39761ff3840b501535e80bbc7bffb035&language=en-US&page=1&include_adult=false`
 

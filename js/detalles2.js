@@ -1,10 +1,10 @@
 //CAMBIAR ESTOS DATOS POR LOS DE SERIES.(creo que ya esta)
 //Detalle de serie.
 //Obtengo la qs
-let queryString = location.search;
+let queryString2 = location.search;
 
 //Construyo un objeto literal
-let queryStringObj3 = new URLSearchParams (queryString);
+let queryStringObj3 = new URLSearchParams (queryString2);
 
 //obtengo el id de la propiedad del objeto literal
 let id = queryStringObj3.get('id');
@@ -87,10 +87,10 @@ estrella.addEventListener('click', function(){
 
 //BUSCADOR
 
+
+
+
 let url = 'https://api.themoviedb.org/3/movie/{movie_id}?api_key=e3f1ae8bae04c04c63af7b6996decd02&language=en-US'
-
-
-
 
 
 
@@ -126,9 +126,9 @@ fetch(url)
         }
     })
     
-    let querystring = location.search
-    let queryStringObj = new URLSearchParams(querystring);
-    let busqueda = queryStringObj.get('busqueda');
+    let querystringBuscador = location.search
+    let queryStringObj2 = new URLSearchParams(querystringBuscador);
+    let busqueda = queryStringObj2.get('busqueda');
     console.log(busqueda);
     let url_searchPelis = `https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=39761ff3840b501535e80bbc7bffb035&language=en-US&page=1&include_adult=false`
     

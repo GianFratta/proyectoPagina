@@ -19,9 +19,9 @@ barraDeBusqueda.addEventListener('submit', function(e){
     }
 })
 
-let querystring = location.search
-let queryStringObj = new URLSearchParams(querystring);
-let busqueda = queryStringObj.get('busqueda');
+let querystringBuscador = location.search
+let queryStringObj2 = new URLSearchParams(querystringBuscador);
+let busqueda = queryStringObj2.get('busqueda');
 console.log(busqueda);
 let url_searchPelis = `https://api.themoviedb.org/3/search/movie?query=${busqueda}&api_key=39761ff3840b501535e80bbc7bffb035&language=en-US&page=1&include_adult=false`
 
