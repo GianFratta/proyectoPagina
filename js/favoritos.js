@@ -10,20 +10,22 @@ let favosPeliculas = ''
 for (let i = 0; i < favoritosPeliculas.length; i++){
    let url = `https://api.themoviedb.org/3/movie/${favoritosPeliculas[i]}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US` //ES ESTE.
    fetch(url)
-        .then(function (res){
+    .then(function (res){
       return res.json()
    })
-        .then(function (data){
+    .then(function (data){
       console.log(data);
-      favos += pelis_p += `<article class="item"> 
+      favosPeliculas += `<div class="favsPelis">
+      <article class="item"> 
       <a href="./detalles.html?id=${data.results[i].id}">
       <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
       </a>
       <h3 class="articulo">${data.results[i].title}</h3>
-      </article>`
+      </article>
+      </div>`
    })
         .catch(function (error){
-      console.log(error);
+            console.log(error);
    })
 
 }
@@ -44,7 +46,8 @@ for (let i = 0; i < favoritosSeries.length; i++){
    })
         .then(function (data){
       console.log(data);
-      favos += pelis_p += `<article class="item"> 
+      favosSeries += `<div class = >
+      <article class="item"> 
       <a href="./detalles.html?id=${data.results[i].id}">
       <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
       </a>
