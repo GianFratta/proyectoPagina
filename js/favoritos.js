@@ -16,7 +16,7 @@ for (let i = 0; i < favoritosPeliculas.length; i++){
         .then(function (data){
       console.log(data);
       favos += pelis_p += `<article class="item"> 
-      <a href="./detalles.html">
+      <a href="./detalles.html?id=${data.results[i].id}">
       <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
       </a>
       <h3 class="articulo">${data.results[i].title}</h3>
@@ -45,7 +45,7 @@ for (let i = 0; i < favoritosSeries.length; i++){
         .then(function (data){
       console.log(data);
       favos += pelis_p += `<article class="item"> 
-      <a href="./detalles.html">
+      <a href="./detalles.html?id=${data.results[i].id}">
       <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
       </a>
       <h3 class="articulo">${data.results[i].title}</h3>
@@ -105,7 +105,7 @@ fetch(url_searchPelis)
 
         for(let i=0; i<2; i++){
             section.innerHTML += `<article class="item">
-                <a href="./detalles.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
+                <a href="./detalles.html?id=${data.results[i].id}"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
                 </a>
                 <h1 class="articulo">${data.results[i].title}</h1>
                 <p>${data.results[i].release_date}</p>
@@ -133,7 +133,7 @@ fetch(url_searchSeries)
 
         for(let i=0; i<3; i++){
             section.innerHTML += `<article class="item">
-                <a href="./detalles series.html"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
+                <a href="./detalles series.html?id=${data.results[i].id}"><img class="taquilla" src= "https://image.tmdb.org/t/p/w500${data.results[i].poster_path}" alt="">
                 </a>
                 <h1 class="articulo">${data.results[i].original_name}</h1>
                 <p>${data.results[i].first_air_date}</p>

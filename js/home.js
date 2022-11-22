@@ -14,7 +14,7 @@ fetch(url_PelisPopulares)
 
         for (let i = 0; i < 5; i++){
             pelis_p += `<article class="item"> 
-            <a href="./detalles.html">
+            <a href="./detalles.html?id=${data.results[i].id}">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].title}</h3>
@@ -63,7 +63,7 @@ fetch(url_SeriesPopulares)
 
         for (let i = 0; i < 5; i++){
             series_p += `<article class="item"> 
-            <a href="./detalles series.html">
+            <a href="./detalles series.html?id=${data.results[i].id}">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
@@ -96,7 +96,7 @@ fetch(url_pelisValoradas)
 
         for (let i = 0; i < 5; i++){
             pelis_v += `<article class="item"> 
-            <a href="./detalles.html">
+            <a href="./detalles.html?id=${data.results[i].id}">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].title}</h3>
@@ -129,7 +129,7 @@ fetch(url_seriesValoradas)
 
         for (let i = 0; i < 5; i++){
             series_v += `<article class="item"> 
-            <a href="./detalles series.html">
+            <a href="./detalles series.html?id=${data.results[i].id}">
             <img class= "taquilla" src="${urlImgAppend + data.results[i].poster_path}" alt="">
             </a>
             <h3 class="articulo">${data.results[i].original_name}</h3>
