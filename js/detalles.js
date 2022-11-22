@@ -58,7 +58,6 @@ let estrella = document.querySelector('button');
 if(favoritosPeliculas.includes(id)){
     estrella.innerText = 'Quitar de favoritos'
 }
- 
 estrella.addEventListener('click', function(){
 
     if(favoritosPeliculas.includes(id)){

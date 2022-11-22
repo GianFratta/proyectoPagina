@@ -52,7 +52,7 @@ for (let i = 0; i < favoritosSeries.length; i++){
         })
         .then(function (data){
             console.log(data);
-            favosSeries += `<div class = >
+            favosSeries += `<div>
             <article class="item"> 
             <a href="./detalles.html?id=${data.results[i].id}">
             <img class= "taquilla" src="${urlAppend + data.results[i].poster_path}" alt="">
