@@ -77,9 +77,9 @@ estrella.addEventListener('click', function(){
     }
  
     let favsToString = JSON.stringify(favoritosSeries)
-    localStorage.setItem('pelisFavs',favsToString)
+    localStorage.setItem('seriesFavs',favsToString)
     
-    console.log(localStoragSeries);
+    console.log(localStorage);
  
 })
 

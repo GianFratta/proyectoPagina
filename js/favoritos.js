@@ -8,23 +8,22 @@ let favsPelis = document.querySelector('.favsPelis')
 let favosPeliculas = ''
 
 for (let i = 0; i < favoritosPeliculas.length; i++){
-   let url = `https://api.themoviedb.org/3/movie/${favoritosPeliculas[i]}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US` //ES ESTE.
+   let urlPelis = `https://api.themoviedb.org/3/movie/${favoritosPeliculas[i]}?api_key=ef66ec72eea3905791e313820b40269c&language=en-US`
    let urlAppend = "https://image.tmdb.org/t/p/original"
 
-   fetch(url)
-        .then(function (res){
+   fetch(urlPelis)
+        .then(function(res){
             return res.json()
         })
         .then(function (data){
             console.log(data);
             favosPeliculas += `<div class="favsPelis">
             <article class="item"> 
-            <a href="./detalles.html?id=${data.results[i].id}">
-            <img class= "taquilla" src="${urlAppend + data.results[i].poster_path}" alt="">
+            <a href="./detalles.html?id=${data.id}">
+            <img class= "taquilla" src="${urlAppend + data.poster_path}" alt="">
             </a>
-            <h3 class="articulo">${data.results[i].title}</h3>
-            </article>
-            </div>`
+            <h3 class="articulo">${data.title}</h3>
+            </article>`
 
             favsPelis.innerHTML = favosPeliculas
         })
@@ -35,7 +34,7 @@ for (let i = 0; i < favoritosPeliculas.length; i++){
 }
 
 //FAVORITOS SERIES
-let recuperoStorageSeries = localStorage.getItem('favoritosSeries')
+let recuperoStorageSeries = localStorage.getItem('seriesFavs')
 let favoritosSeries = JSON.parse(recuperoStorageSeries)
 console.log(favoritosSeries);
 
@@ -43,21 +42,21 @@ let favsSeries = document.querySelector('.favsSeries')
 let favosSeries = ''
 
 for (let i = 0; i < favoritosSeries.length; i++){
-   let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US` //ESTA URL YA ESTA BIEN
+   let url = `https://api.themoviedb.org/3/tv/${favoritosSeries[i]}?api_key=89b3abec13d5b342a0a8c66f4e9a5020&language=en-US`
    let urlAppend = "https://image.tmdb.org/t/p/original"
 
    fetch(url)
-        .then(function (res){
+        .then(function(res){
             return res.json()
         })
         .then(function (data){
             console.log(data);
-            favosSeries += `<div>
+            favosSeries += `<div class="favsSeries">
             <article class="item"> 
-            <a href="./detalles.html?id=${data.results[i].id}">
-            <img class= "taquilla" src="${urlAppend + data.results[i].poster_path}" alt="">
+            <a href="./detalles series.html?id=${data.id}">
+            <img class= "taquilla" src="${urlAppend + data.poster_path}" alt="">
             </a>
-            <h3 class="articulo">${data.results[i].title}</h3>
+            <h3 class="articulo">${data.name}</h3>
             </article>`
 
             favsSeries.innerHTML = favosSeries
