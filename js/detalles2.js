@@ -25,7 +25,6 @@ fetch(url1)
      let sinopsis = document.querySelector('.sinopsis');
      let estreno = document.querySelector('.estreno');
      let img = document.querySelector('.peli-taquilla');
-     let genero = document.querySelector('.genero');
      let rating = document.querySelector('.rating');
   
 
@@ -34,7 +33,6 @@ fetch(url1)
      sinopsis.innerText += data.overview;
      estreno.innerText += data.first_air_date;
      img.innerHTML = `<img class="peli-taquilla" src="${urlappend + data.poster_path}" alt="">`
-     genero.innerHTML = data.genre_ids;
      rating.innerText += data.vote_average;
      
 
@@ -87,9 +85,6 @@ estrella.addEventListener('click', function(){
 
 //BUSCADOR
 
-
-
-
 let url = 'https://api.themoviedb.org/3/movie/{movie_id}?api_key=e3f1ae8bae04c04c63af7b6996decd02&language=en-US'
 
 
@@ -117,7 +112,7 @@ fetch(url)
             
         }
         else if(respuesta.value.length < 3){
-            mensaje.innerHTML = "Minimo 4 caracteres"
+            mensaje.innerHTML = "Minimo 3 caracteres"
         }
     
         else{

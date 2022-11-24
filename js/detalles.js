@@ -24,7 +24,6 @@ fetch(url)
      let sinopsis = document.querySelector('.sinopsis');
      let estreno = document.querySelector('.estreno');
      let img = document.querySelector('.peli-taquilla');
-     let genero = document.querySelector('.genero');
      let rating = document.querySelector('.rating');
   
 
@@ -33,7 +32,6 @@ fetch(url)
      sinopsis.innerText += data.overview;
      estreno.innerText += data.release_date;
      img.innerHTML = `<img class="peli-taquilla" src="${urlappend + data.poster_path}" alt="">`
-     genero.innerHTML = data.genre_ids;
      rating.innerText += data.vote_average;
     })
         .catch(function(e){
@@ -90,7 +88,7 @@ barraDeBusqueda.addEventListener('submit', function(e){
         
     }
     else if(respuesta.value.length < 3){
-        mensaje.innerHTML = "Minimo 4 caracteres"
+        mensaje.innerHTML = "Minimo 3 caracteres"
     }
 
     else{

@@ -159,7 +159,7 @@ barraDeBusqueda.addEventListener('submit', function(e){
         
     }
     else if(respuesta.value.length < 3){
-        mensaje.innerHTML = "Minimo 4 caracteres"
+        mensaje.innerHTML = "Minimo 3 caracteres"
     }
 
     else{
